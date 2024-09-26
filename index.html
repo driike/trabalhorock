@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Lima's Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #333;
+            color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #e0e0e0;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: 4px solid #4CAF50; /* Optional: adds a border around the photo */
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #e0e0e0;
+        }
+
+        .about, .projects, .skills, .experience, .courses, .contact {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            position: relative; /* Needed for absolute positioning of profile-pic */
+        }
+
+        .projects img {
+            width: 20%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .skills ul, .experience ul, .courses ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li, .experience li, .courses li {
+            background-color: #333;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+        }
+
+        /* Contact Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            background-color: #222;
+            color: #e0e0e0;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #e0e0e0;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pedro Lima</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <img src="mefoto.jpeg" alt="Profile Photo" class="profile-pic">
+            <h2 class="section-title">About Me</h2>
+            <p><strong>Pedro Lima</strong></p>
+            <p>Marketing and Sales | Strategic Marketing | Aftermarketing | Data Analysis | Data Architecture | Computer Science</p>
+            <p>I’m Pedro, a technology-loving marketing analyst driven by innovation and committed to exceptional results.</p>
+            <p>Hello, I'm Pedro, and at 20 years old, I already have 5 years of experience in the digital marketing industry. My journey began at the age of 15 when I acquired my first clients for digital media and fell in love with the power of connecting brands with people through screens.</p>
+            <p>Over the years, I've had the opportunity to work in various marketing agencies, where I am immensely grateful to those who generously shared their knowledge with me. With skills in video editing, design, programming, and marketing strategies, I've developed an approach I like to call "the art of capturing people through screens."</p>
+            <p>Currently, I'm studying Computer Science, diving into the world of programming with a focus on data analysis, data architecture, and software engineering. Beyond technical skills, I deeply value the soft skills required for front-end development, understanding that programming not only complements my marketing skills but also enhances my analytical and strategic vision.</p>
+            <p>I love what I do in marketing and consider it a privilege to share and learn daily with my colleagues and friends. I'm passionate about innovation and creativity, always seeking new challenges and opportunities to grow and contribute.</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-title">Projects</h2>
+            <ul>
+                <li>
+                    <h3>Mastertec at John Deere</h3>
+                    <p>The Mastertec is a competition for technicians from Latin America, promoted by John Deere, where I had the opportunity to coordinate the entire marketing strategy. This project distinguished me during my internship, resulting in my hiring after just 4 months. I am grateful to everyone who helped me with this project.</p>
+                </li>
+                <li>
+                    <h3>AON</h3>
+                    <p>In my current role as a marketing analyst, I am responsible for communications related to John Deere's yellow line (construction). I have the opportunity to express effective communication across all of Latin America.</p>
+                </li>
+                <!-- Add more projects as needed -->
+            </ul>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>Marketing and Sales</li>
+                <li>Strategic Marketing</li>
+                <li>Aftermarketing</li>
+                <li>Data Analysis</li>
+                <li>Python</li>
+                <li>Power BI</li>
+                <li>MySQL</li>
+                <li>Automations</li>
+                <li>Data Architecture</li>
+                <li>Computer Science</li>
+            </ul>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2 class="section-title">Experience</h2>
+            <ul>
+                <li>Intern at John Deere | Aftermarketing and Customer Support | 4 months</li>
+                <li>Marketing Analyst | Currently</li>
+                <li>Marketing and Communication at Agência Vida | April 2024 - July 2024 | 4 months</li>
+                <li>Marketing and Communication at Agência Sensu | March 2023 - August 2024 | 1 year 6 months</li>
+                <li>Logistics at QPASSO | April 2021 - April 2022 | 1 year 1 month</li>
+                <li>Apprentice at Amil | April 2019 - July 2019 | 4 months</li>
+            </ul>
+        </section>
+
+        <section id="courses" class="courses">
+            <h2 class="section-title">Courses</h2>
+            <ul>
+                <li>English School - CCAA</li>
+                <li>English School - BC English School</li>
+                <li>Event Marketing - RD University</li>
+                <li>Content Marketing - Rock University</li>
+                <li>Blockchain | Java | Excel | Artificial Intelligence | Communication and Information Technology | Programming Logic - SENAI São Paulo</li>
+                <li>Oracle Java Programming - Oracle</li>
+                <li>Python AI Backend Developer - DIO</li>
+                <li>HTML - DIO</li>
+                <li>Data Science - Fundação Getulio Vargas</li>
+                <li>Introduction to Business Intelligence - Fundação Getulio Vargas</li>
+                <li>Digital Marketing - RD University</li>
+                <li>CRM - RD Station</li>
+                <li>UX/UI Design - Cubos Academy</li>
+                <li>Data Science - DIO</li>
+                <li>Python - DIO</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contact</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pedro Lima. All rights reserved.</p>
+    </footer>
+</body>
+</html>
